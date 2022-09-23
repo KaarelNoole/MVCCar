@@ -11,6 +11,6 @@ namespace MvcCar.Models
         public string Name { get; set; }
         public string Company { get; set; }
         public int Speed { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

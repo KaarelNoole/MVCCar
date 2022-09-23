@@ -9,7 +9,7 @@ using MvcCar.Data;
 namespace MvcCar.Migrations
 {
     [DbContext(typeof(MvcCarContext))]
-    [Migration("20220923063920_InitialCreate")]
+    [Migration("20220923073832_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,8 +33,8 @@ namespace MvcCar.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Speed")
                         .HasColumnType("int");
